@@ -14,6 +14,7 @@ import "leaflet/dist/leaflet.css";
 import "./app.css";
 import iconImage from "../icon.jpeg";
 import heroMapImage from "../icon1.png";
+import terrainImage from "../13.png";
 
 const watershedData = {
   high: {
@@ -170,25 +171,12 @@ function getThemeStyle(theme, zone) {
 }
 
 function MiniTerrain({ data }) {
-  const range = data.elevationMax - data.elevationMin;
-
   return (
-    <div className="mini-terrain">
-      <div className="terrain-grid" />
-      <div className="terrain-mountain terrain-mountain-back" />
-      <div className="terrain-mountain terrain-mountain-front" />
-      <div className="terrain-river" />
-      <div className="terrain-contour contour-one" />
-      <div className="terrain-contour contour-two" />
-      <div className="terrain-contour contour-three" />
-      <div className="terrain-label elevation-low">{data.elevationMin}m</div>
-      <div className="terrain-label elevation-high">{data.elevationMax}m</div>
-      <div className="terrain-compass">N</div>
-      <div className="terrain-footer">
-        <span>DEM terrain</span>
-        <b>Range {range} m</b>
-      </div>
-    </div>
+    <img
+      className="mini-terrain terrain-image"
+      src={terrainImage}
+      alt={`Terrain preview for ${data.name}`}
+    />
   );
 }
 
