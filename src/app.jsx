@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import "./App.css";
+import "./app.css";
 import { csvWatershedData } from "./data/csv-watershed-data";
 import GoogleMapsMap from "./GoogleMapsMap";
 import high2dImage from "./assets/high-2d.jpeg";
