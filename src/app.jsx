@@ -711,7 +711,7 @@ function App() {
               </div>
 
               <small className="search-hint">
-                Demonstration coverage: <b>Bihar</b> - Banka (High & Medium) or Khatangi, Gaya, and Jota (Low). Uploading one image opens Low Priority directly.
+                Demonstration coverage: <b>Bihar</b> - Banka, Khatangi, Gaya, and Jota.
               </small>
 
             </div>
